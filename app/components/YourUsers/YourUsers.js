@@ -16,9 +16,9 @@ import { images } from '../../assets/images/Images'
 import ButtonOpacity from '../Buttons/buttonOpacity'
 import ButtonFooter from '../Buttons/buttonFooter'
 
-export default class YourCards extends Component {
+export default class YourUsers extends Component {
   static navigationOptions = {
-    headerTitle: 'Your Cards',
+    headerTitle: 'Your Users',
     headerTintColor: '#2980b9',
     headerStyle: { elevation: 0 },
     headerLeft: null,
@@ -42,11 +42,11 @@ export default class YourCards extends Component {
   }
 
   _onSelectCard = card => {
-    this.props.navigation.navigate('CardDetails', { ...card })
+    this.props.navigation.navigate('UserDetails', { ...card })
   }
 
   _onPressAdd = () => {
-    this.props.navigation.navigate('RetailersList')
+    this.props.navigation.navigate('UsersList')
   }
 
   _onBtnPress = () => {

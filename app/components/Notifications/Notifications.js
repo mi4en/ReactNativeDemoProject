@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 import {
   View,
   Text,
@@ -7,29 +7,29 @@ import {
   Image,
   TouchableOpacity,
   ScrollView
-} from 'react-native'
+} from "react-native";
 // import Icon from 'react-native-vector-icons/FontAwesome'
-import TermsAndConditionsButton from '../Buttons/termCondBtn'
-import { createStackNavigator } from 'react-navigation'
-import { images } from '../../assets/images/Images'
-import ButtonOpacity from '../Buttons/buttonOpacity'
+import TermsAndConditionsButton from "../Buttons/termCondBtn";
+import { createStackNavigator } from "react-navigation";
+import { images } from "../../assets/images/Images";
+import ButtonOpacity from "../Buttons/buttonOpacity";
 
 export default class Welcome extends Component {
   static navigationOptions = {
-    headerTitle: 'Notifications Menu',
-    headerTintColor: '#2980b9',
+    headerTitle: "Notifications Menu",
+    headerTintColor: "#2980b9",
     headerStyle: { elevation: 0 }
-  }
+  };
 
   _onSkipPress = () => {
-    this.props.navigation.navigate('YourCards')
-  }
+    this.props.navigation.navigate("YourUsers");
+  };
 
   _onNotifyMePress = () => {
-    this.props.navigation.navigate('YourCards')
-  }
+    this.props.navigation.navigate("YourUsers");
+  };
 
-  render () {
+  render() {
     return (
       <ScrollView style={styles.container}>
         <View style={styles.container}>
@@ -42,30 +42,30 @@ export default class Welcome extends Component {
           </Text>
           <ButtonOpacity
             onPress={this._onNotifyMePress}
-            label={'Notify me'}
+            label={"Notify me"}
             activeOpacity={0.4}
             buttonStyle={styles.buttonNotify}
           />
           <ButtonOpacity
             onPress={this._onSkipPress}
-            label={'Skip'}
+            label={"Skip"}
             activeOpacity={0.4}
             buttonStyle={styles.buttonSkip}
           />
         </View>
       </ScrollView>
-    )
+    );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white'
+    backgroundColor: "white"
   },
   logoContainer: {
     margin: 20,
-    alignItems: 'flex-end'
+    alignItems: "flex-end"
   },
 
   logo: {
@@ -73,41 +73,41 @@ const styles = StyleSheet.create({
     height: 60
   },
   textQuestion: {
-    color: '#2980b9',
+    color: "#2980b9",
     marginTop: 10,
     marginLeft: 20,
-    textAlign: 'left',
-    fontFamily: 'OldStandard-Bold',
+    textAlign: "left",
+    fontFamily: "OldStandard-Bold",
     fontSize: 30
   },
   textMessage: {
     marginTop: 10,
     marginBottom: 20,
     marginLeft: 20,
-    color: 'black',
-    textAlign: 'left',
-    fontWeight: '400',
+    color: "black",
+    textAlign: "left",
+    fontWeight: "400",
     fontSize: 20
   },
   buttonNotify: {
-    backgroundColor: '#17c0eb',
-    width: '60%',
+    backgroundColor: "#17c0eb",
+    width: "60%",
     height: 50,
     borderRadius: 40,
-    borderColor: '#17c0eb',
+    borderColor: "#17c0eb",
     borderWidth: 10,
     margin: 10,
     marginLeft: 20
   },
   buttonSkip: {
-    backgroundColor: 'white',
-    width: '30%',
+    backgroundColor: "white",
+    width: "30%",
     height: 50,
     borderRadius: 40,
-    borderColor: '#17c0eb',
+    borderColor: "#17c0eb",
     borderWidth: 3,
     margin: 10,
     marginLeft: 20,
     paddingTop: 5
   }
-})
+});

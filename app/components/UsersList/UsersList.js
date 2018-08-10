@@ -3,9 +3,9 @@ import { FlatList, Text, View, Image } from 'react-native'
 import { List, ListItem, Title } from 'react-native-elements'
 import { images } from '../../assets/images/Images'
 
-export default class RetailersList extends Component {
+export default class UsersList extends Component {
   static navigationOptions = {
-    headerTitle: 'Retailers List',
+    headerTitle: 'Users List',
     headerTintColor: '#2980b9',
     headerStyle: { elevation: 0 },
     headerRight: (
@@ -28,7 +28,7 @@ export default class RetailersList extends Component {
   }
 
   _onSelectRetailer = retailer => {
-    this.props.navigation.navigate('Retailer', { ...retailer })
+    this.props.navigation.navigate('User', { ...retailer })
   }
 
   render () {

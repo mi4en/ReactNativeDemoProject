@@ -5,7 +5,7 @@ import { images } from '../../assets/images/Images'
 
 export default class CardDetails extends Component {
   static navigationOptions = {
-    headerTitle: 'Card Details',
+    headerTitle: 'User Details',
     headerTintColor: '#2980b9',
     headerStyle: { elevation: 0 },
     headerRight: (

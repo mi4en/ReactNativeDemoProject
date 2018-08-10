@@ -15,7 +15,7 @@ import ButtonOpacity from '../Buttons/buttonOpacity'
 
 export default class Retailer extends Component {
   static navigationOptions = {
-    headerTitle: 'Retailer',
+    headerTitle: 'User',
     headerTintColor: '#2980b9',
     headerStyle: { elevation: 0 },
     headerRight: (
