@@ -4,7 +4,7 @@ import { List, ListItem, Title, SearchBar } from 'react-native-elements';
 import { images } from '../../assets/images/Images';
 import { retailers } from '../../config/dummyData';
 
-export default class RetailersList extends Component {
+export default class BrandsList extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -40,7 +40,7 @@ export default class RetailersList extends Component {
 	};
 
 	_onSelectRetailer = retailer => {
-		this.props.navigation.navigate('Retailer', { ...retailer });
+		this.props.navigation.navigate('Brand', { ...retailer });
 	};
 
 	// searchFilterFunction = text => {

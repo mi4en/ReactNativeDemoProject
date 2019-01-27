@@ -5,8 +5,8 @@ import CreateAccount from '../components/CreateAccount/CreateAccount';
 import Notifications from '../components/Notifications/Notifications';
 import YourCards from '../components/YourCards/YourCards';
 import CardDetails from '../components/CardDetails/CardDetails';
-import RetailersList from '../components/RetailersList/RetailersList';
-import Retailer from '../components/Retailer/Retailer';
+import BrandsList from '../components/BrandsList/BrandsList';
+import Brand from '../components/Brand/Brand';
 import TermsAndConditions from '../components/TermsAndConditions/TermsAndConditions';
 import TermsAndConditionsButton from '../components/Buttons/termCondBtn';
 import ForgotPassword from '../components/ForgotPassword/ForgotPassword';
@@ -25,8 +25,8 @@ export const RootStack = createStackNavigator({
 	Notifications: Notifications,
 	YourCards: YourCards,
 	CardDetails: CardDetails,
-	RetailersList: RetailersList,
-	Retailer: Retailer,
+	BrandsList: BrandsList,
+	Brand: Brand,
 	TermsAndConditions: TermsAndConditions,
 	TermsAndConditionsButton: TermsAndConditionsButton,
 	ForgotPassword: ForgotPassword,

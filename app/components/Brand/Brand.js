@@ -4,9 +4,9 @@ import { Tile, List, ListItem } from 'react-native-elements';
 import { images } from '../../assets/images/Images';
 import ButtonOpacity from '../Buttons/buttonOpacity';
 
-export default class Retailer extends Component {
+export default class Brand extends Component {
 	static navigationOptions = {
-		headerTitle: 'Retailer',
+		headerTitle: 'Brand',
 		headerTintColor: '#2980b9',
 		headerStyle: { elevation: 0 },
 		headerRight: (
@@ -35,7 +35,7 @@ export default class Retailer extends Component {
 
 				<List>
 					{/* <ListItem
-						title="Retailer"
+						title="Brand"
 						rightTitle={name.toUpperCase()}
 						hideChevron
 					/> */}

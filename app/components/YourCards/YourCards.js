@@ -86,7 +86,7 @@ export default class YourCards extends Component {
 	};
 
 	_onPressAdd = () => {
-		this.props.navigation.navigate('RetailersList');
+		this.props.navigation.navigate('BrandsList');
 	};
 
 	_onPressSettings = () => {
